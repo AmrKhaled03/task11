@@ -1,0 +1,130 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: sans-serif;
+scroll-behavior: smooth;
+width: 100%;
+overflow-x: hidden;
+}
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 200px;
+flex-direction: column;
+
+  background-color: black;
+    padding: 35px 30px 10px 30px;
+    width: 85%;
+}
+.container>form>.txt,
+.container>#colIn{
+    padding:  10px 50px;
+    border-radius: 30px;
+    border: 1px solid yellow;
+    color: yellow;
+    background-color: black;
+}
+.container>form>.txt:focus,.container>#colIn:focus{
+    outline: none;
+}
+.container>form>.btn,.container>#colBtn{
+    padding: 10px 30px;
+    background-color:yellow; 
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    
+    color: black; 
+}
+.container>form>.btn:hover,
+.container>form>.btn:focus,
+.container>#colBtn:hover,
+.container>#colBtn:focus{
+    background-color: green;  
+   color: white;
+} 
+.container>.list{
+padding: 15px 0px;
+
+list-style-type: none;
+}
+.container>.list>li{
+  padding: 10px ;
+background-color: black;
+margin: 20px;
+color: yellow;
+    line-height: 1.8;
+    letter-spacing: 1px;
+display: flex;
+border-radius: 30px;
+border: 1px solid yellow;
+justify-content: space-between;
+align-items: center;
+
+}
+.container>.list>li>.delete{
+    background-color: transparent;
+
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+
+    border-radius: 5px;
+    margin-left: 300px;
+}
+.container>.list>li>.delete>i{
+
+color: yellow;
+font-size: 25px;
+cursor: pointer;
+}
+.container>.list>li>.delete>i:hover{
+    color: red;
+}
+
+@media (min-width:300px) and (max-width:576px) {
+    .container{
+     position: relative;
+     right: 27%;
+
+    }
+    
+}
+@media (min-width:577px) and (max-width:768px) {
+    .container{
+        position: relative;
+        right: 20%;
+   
+       }
+}
+@media (min-width:769px) and (max-width:992px) {
+    .container{
+        position: relative;
+        right: 10%;
+   
+       }
+} 
+.two{
+    flex-direction: row;
+padding: 30px;
+
+}
+.two>#colBtn{
+    margin-left: 5px;
+}
+h4{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
